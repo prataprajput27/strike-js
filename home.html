@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strike.js</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="Utils/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000000;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed text-white text-lg ml-4 mt-4 select-none text-2xl">
+      <span>High Score: </span><span id="highScoreEl">0</span>
+      <span> | Score: </span><span id="scoreEl">0</span>
+    </div>
+
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+      <div class="bg-white max-w-md w-full p-6 text-center">
+        <h3 id="categoryMessage" class="font-semibold pb-6 text-green-600 text-sm">
+          Let's see how far can you go!
+        </h3>
+        <div style="display: flex; justify-content: space-evenly">
+          <div>
+            <h1 class="text-4xl font-bold" id="bigScoreEl">0</h1>
+            <p class="text-sm text-gray-700 mb-4">Points</p>
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold" id="bigTimerEl">0s</h1>
+            <p class="text-sm text-gray-700 mb-4">Time</p>
+          </div>
+        </div>
+        <div>
+          <button
+            class="bg-red-600 text-white w-full py-3 rounded"
+            id="startGameBtn"
+          >
+            Start Game
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="fixed text-white text-lg mr-4 mt-4 select-none text-2xl"
+      id="timer"
+      style="top: 0; right: 0"
+    >
+      Time: 0s
+    </div>
+    <canvas></canvas>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
