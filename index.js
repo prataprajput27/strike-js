@@ -96,7 +96,7 @@ class Particle {
     this.radius = radius;
     this.color = color;
     this.velocity = velocity;
-    this.alpha = 1; // Alpha value for fading out effect
+    this.alpha = 2; // Alpha value for fading out effect
   }
 
   // Method to draw the particle on the canvas
@@ -410,15 +410,15 @@ function drawGalaxy() {
 
 // Function to get the message based on the player's performance
 function getMessageBasedOnScore(score) {
-  if (score < 499) {
+  if (score < 1499) {
     return "Keep trying! Practice makes perfect.";
-  } else if (score >= 500 && score < 999) {
+  } else if (score >= 1500 && score < 2999) {
     return "Good job! You're getting better.";
-  } else if (score >= 1000 && score < 1999) {
+  } else if (score >= 3000 && score < 5999) {
     return "Great work! You're a skilled player.";
-  } else if (score >= 2000 && score < 2999) {
+  } else if (score >= 6000 && score < 7999) {
     return "Awesome! You're a pro at this!";
-  } else if (score >= 3000 && score < 3999) {
+  } else if (score >= 8000 && score < 9999) {
     return "Incredible! You're a legend!";
   } else {
     return "Unbelievable! Are you a gamer seriously?";

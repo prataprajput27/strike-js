@@ -27,14 +27,17 @@
   </head>
   <body>
     <div
-      class="fixed text-white text-lg ml-4 mt-4 select-none text-1xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl"
+      class="fixed text-white text-sm ml-4 mt-4 select-none text-1xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl"
     >
       <span>High Score: </span><span id="highScoreEl">0</span>
       <span> | Score: </span><span id="scoreEl">0</span>
     </div>
 
     <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
-      <div class="bg-white max-w-md w-full p-6 text-center">
+      <div
+        class="bg-white max-w-md w-full m-6 p-6 text-center"
+        style="border-radius: 4px"
+      >
         <h3
           id="categoryMessage"
           class="font-semibold pb-6 text-green-600 text-sm"
@@ -63,7 +66,7 @@
     </div>
 
     <div
-      class="fixed text-white text-lg mr-4 mt-4 select-none text-1xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl"
+      class="fixed text-white text-sm mr-4 mt-4 select-none text-1xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl"
       id="timer"
       style="top: 0; right: 0"
     >
